@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="calc-body">
+      <div class="calc-screen">
+        <div class="calc-operation">
+          <p>{{res}}</p>
+        </div>
+        <div class="calc-typed"><span class="blink-me"></span></div>
+      </div>
+      <div class="calc-button-row">
+        <div class="button c" (click)="a('C')">C</div>
+        <div class="button l" (click)="a('DEL')">DEL</div>
+        <div class="button l" (click)="a('%')">%</div>
+        <div class="button l" (click)="a('/')">/</div>
+      </div>
+      <div class="calc-button-row">
+        <app-button [input]="'7'"></app-button>
+        <app-button [input]="'8'"></app-button>
+        <app-button [input]="'9'"></app-button>
+        <app-button [input]="'*'"></app-button>
+      </div>
+      <div class="calc-button-row">
+        <app-button [input]="'4'"></app-button>
+        <app-button [input]="'5'"></app-button>
+        <app-button [input]="'6'"></app-button>
+        <app-button [input]="'-'"></app-button>
+      </div>
+      <div class="calc-button-row">
+        <app-button [input]="'1'"></app-button>
+        <app-button [input]="'2'"></app-button>
+        <app-button [input]="'3'"></app-button>
+        <app-button [input]="'+'"></app-button>
+      </div>
+      <div class="calc-button-row">
+        <app-button [input]="'.'"></app-button>
+        <app-button [input]="'0'"></app-button>
+        <app-button [input]="'^'"></app-button>
+        <app-button [input]="'='"></app-button>
+        </div>
+      </div>
+    </div>
+  
+    <script src="assets/script.js"></script>
+  
+  <router-outlet></router-outlet>
+  
